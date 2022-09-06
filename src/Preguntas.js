@@ -9,37 +9,38 @@ export function Preguntas() {
   },[])
 
   return (
-    <div>
+    <div className="contenedorPreguntas">
       <div>
-        <p>
+        <p className="textoPreguntas">
           Desarrolle un for que vaya de 1 a 10 de manera sincrona y otro de
           manera asíncrona, muestra los resultados, ¿estos salen en orden? ¿Por
           qué?
         </p>
         <div className="fores">
         <p>
-          <span>RTA For sincrono:</span>
+          <span>For sincrono:</span>
           {syncFor().map((number) => (
-            <li key={number}>{number}</li>
+            <li className="numerosDelFor" key={number}>{number}</li>
           ))}
         </p>
         <p>
-          <span>RTA For Asincrono:</span>
+          <span>For Asincrono:</span>
           {numbers.map((number) => (
-            <li key={number}>{number}</li>
+            <li className="numerosDelFor" key={number}>{number}</li>
           ))}
         </p>
         </div>
+        <p><span className="Rta">RTA:</span> Ambos For entregan los numeros en orden debido a que en caso de usar un for Sincrono obtendremos el listado de numeros normalmente del 1 al 10, lo mismo ocurrira con el for asincrono siempre y cuando resolvamos la promesa mediante async/await. En caso de usar algún método de los arrays como forEach estos no funcionan bien con async/await por lo que obtendremos el listado de numeros en desorden.</p>
       
       </div>
       <hr />
       <div>
-        <p>
+        <p className="textoPreguntas">
           ¿Qué métodos de seguridad se pueden utilizar en los consumos de
           servicios rest?
         </p>
         <p>
-          <span>RTA:</span> Aplicar mecanismos de criptografía en diferentes
+          <span  className="Rta">RTA:</span> Aplicar mecanismos de criptografía en diferentes
           niveles,Proteger los métodos HTTP, Incorporar mecanismos de cifrado de
           datos confidenciales,Cifrar todos esos datos antes de almacenarlos,
           Integridad del mensaje usando JSON.
@@ -47,11 +48,11 @@ export function Preguntas() {
       </div>
       <hr />
       <div>
-        <p>
+        <p className="textoPreguntas">
           Explique las diferencias entre las funciones sincronas y asíncronas
         </p>
         <p>
-          <span>RTA: </span> Las funciones sincronas son aquellas que ejecutan
+          <span className="Rta">RTA: </span> Las funciones sincronas son aquellas que ejecutan
           codigo de forma secuancial, mientras que las funciones asincronas
           ejecutan codigo a destiempo sin importar el orden de ejecucion.
         </p>

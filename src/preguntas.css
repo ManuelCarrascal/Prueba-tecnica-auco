@@ -1,4 +1,22 @@
-.fores{
-    display: flex;
-    gap: 100px;
+.contenedorPreguntas {
+  font-family: "Homenaje", sans-serif;
+  font-size: 20px;
+  width: auto;
+  height: 100vh;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.fores {
+  display: flex;
+  gap: 100px;
+}
+.numerosDelFor {
+    text-align: center;
+  list-style: none;
+}
+.textoPreguntas{
+    font-size: 25px;
+}
+.Rta{
+    color: green;
 }

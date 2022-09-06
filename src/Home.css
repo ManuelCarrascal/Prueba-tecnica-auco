@@ -1,0 +1,75 @@
+html{
+  scroll-behavior: smooth;
+}
+.contenedor {
+  width: 100%;
+  height: 88vh;
+}
+.bienvenida {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  height: 88vh;
+}
+.contenedorMensajePrincipal {
+  width: 50vw;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 115px 10px 150px 60px;
+}
+.contendorGuiaQuienSoy {
+  width: 50vw;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contendorGeneralBotonesQuienSoy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+}
+.contenedorBotonesQuienSoy {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 10px 0px 10px 0px;
+}
+.botonQuienSoy {
+  user-select: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(124, 124, 124, 0.673);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.botonQuienSoy:hover {
+  background-color: green;
+  color: aliceblue;
+  -webkit-box-shadow: 0px 9px 29px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 29px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 9px 29px 1px rgba(0, 0, 0, 0.75);
+}
+
+#tituloSaludo {
+  font-family: "Antonio", sans-serif;
+  font-size: 40px;
+}
+.contenedorPequeñaEntrada {
+  width: 260px;
+}
+#textoPequeñaEntrada {
+  font-family: "Antonio", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}

@@ -1,0 +1,35 @@
+.contenedorEstudios{
+    width: auto;
+    height: 850px;
+    text-align: center;
+}
+
+.contenedorTituloEstudios {
+  display: flex;
+  justify-content: center;
+}
+#tituloTextoEstudios {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: green;
+  text-decoration: underline;
+}
+.subtituloTextoEstudios{
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(13, 98, 13);
+}
+.contenedorImagenEstudio {
+  display: flex;
+  justify-content: center;
+}
+.contenedorImagenEstudio img {
+   width: 350px;
+  }
+.nombreInstitucion{
+    font-weight: bold;
+    font-family: "Antonio", sans-serif;
+
+}

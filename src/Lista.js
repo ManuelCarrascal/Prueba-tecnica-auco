@@ -3,7 +3,6 @@ import axios from "axios";
 import "./Lista.css";
 export function Lista() {
   const [usuarios, setUsuarios] = useState([]);
-  const [currentPage,setCurrentPage]=useState(0);
   const nextPage= () =>{
     axios.get("https://reqres.in/api/users?page=2").then((respuesta) => {
       const data = respuesta.data;

@@ -51,7 +51,7 @@ export function Preguntas() {
           Explique las diferencias entre las funciones sincronas y asíncronas
         </p>
         <p>
-          <span>RTA:</span> Las funciones sincronas son aquellas que ejecutan
+          <span>RTA: </span> Las funciones sincronas son aquellas que ejecutan
           codigo de forma secuancial, mientras que las funciones asincronas
           ejecutan codigo a destiempo sin importar el orden de ejecucion.
         </p>

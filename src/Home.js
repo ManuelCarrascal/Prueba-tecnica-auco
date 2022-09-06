@@ -5,6 +5,7 @@ import {Historia} from './Historia'
 import {Sueños} from './Sueños'
 import {Metas} from './Metas'
 import {Estudios} from './Estudios'
+import {ProyectoDeVida} from './ProyectoDeVida'
 export function Home() {
   const SALUDO ="Hola!"
   const PEQUEÑAENTRADA="Soy Manuel Carrascal estudiante de ingenieria de sistemas de la Universidad Francisco De Paula Santander Ocaña. "
@@ -21,6 +22,7 @@ export function Home() {
     <Sueños/>
     <Metas/>
     <Estudios/> 
+    <ProyectoDeVida/>
     </div>
   );
 }

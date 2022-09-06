@@ -20,7 +20,7 @@ export function QuienSoy(){
         <a href="#sec4" className="botonQuienSoy" id="botonEstudios">{ESTUDIOS} </a>{" "}
       </div>
       <div className="contenedorBotonesQuienSoy">
-        <button className="botonQuienSoy" id="botonProyecto">{PROYECTODEVIDA} </button>{" "}
+        <a href="#sec5" className="botonQuienSoy" id="botonProyecto">{PROYECTODEVIDA} </a>{" "}
       </div>
     </div>
   </div>

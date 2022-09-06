@@ -71,7 +71,7 @@ const getNumber = (number) => {
   return new Promise((resolve, _) => {
     setTimeout(() => {
       resolve(number);
-    }, Math.floor(Math.random() * 500));
+    }, Math.floor(Math.random() * 100));
   });
 };
 

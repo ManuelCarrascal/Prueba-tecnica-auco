@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import "./homenajeFont.css";
-
 import { Home } from "./Home";
 import { Preguntas } from "./Preguntas";
 import { Lista } from "./Lista";
+
 export const App = () => {
   const [page, setPage] = useState("home");
   const HOME = "Home";

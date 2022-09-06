@@ -1,6 +1,6 @@
 import './Estudios.css'
-import Normal from './normal.jpg'
-import Ufpso from './ufpso.jpg'
+import Normal from 'normal.jpg'
+import Ufpso from 'ufpso.jpg'
 
 export function Estudios(){
     const NOMBRE_INSTITUCION_SECUNDARIA= 'Normal Superior Ocaña'

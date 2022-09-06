@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import './NavBar.css'
+import "./NavBar.css";
 import "./homenajeFont.css";
 
 import { Home } from "./Home";
-import { NavBar } from "./NavBar";
 import { Preguntas } from "./Preguntas";
-import { Lista   } from "./Lista";
+import { Lista } from "./Lista";
 export const App = () => {
   const [page, setPage] = useState("home");
   const HOME = "Home";
@@ -15,28 +14,29 @@ export const App = () => {
     if (page === "home") {
       return (
         <>
-           <Home />
+          <Home />
         </>
       );
     } else if (page === "preguntas") {
       return (
         <>
-          
           <Preguntas />
         </>
       );
-    }else{
-        return (<>
-        <Lista/>
-        </>)
+    } else {
+      return (
+        <>
+          <Lista />
+        </>
+      );
     }
   };
 
-  const toPage = page => event =>{
-    event.preventDefault()
-    window.history.pushState(null,'',`/${page}`);
-    setPage(page)
-  }
+  const toPage = (page) => (event) => {
+    event.preventDefault();
+    window.history.pushState(null, "", `/${page}`);
+    setPage(page);
+  };
   return (
     <>
       <nav className="barraNavegacion">
@@ -47,17 +47,25 @@ export const App = () => {
         </div>
         <div className="menuOpcionesNavegacion">
           <div>
-            <a href="/" onClick={toPage('home')} className="textoMenuOpciones">
+            <a href="/" onClick={toPage("home")} className="textoMenuOpciones">
               {HOME}
             </a>
           </div>
           <div>
-            <a href="lista" onClick={toPage('lista')} className="textoMenuOpciones">
+            <a
+              href="lista"
+              onClick={toPage("lista")}
+              className="textoMenuOpciones"
+            >
               {LISTA}
             </a>
           </div>
           <div>
-            <a href="preguntas" onClick={toPage('preguntas')} className="textoMenuOpciones">
+            <a
+              href="preguntas"
+              onClick={toPage("preguntas")}
+              className="textoMenuOpciones"
+            >
               {PREGUNTAS}
             </a>
           </div>
